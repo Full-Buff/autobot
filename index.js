@@ -212,14 +212,3 @@ client.on('interactionCreate', async interaction => {
 
 // Login to Discord
 client.login(TOKEN);
-
-// Keep the bot alive on Glitch with a simple HTTP server
-const http = require('http');
-const server = http.createServer((req, res) => {
-  res.writeHead(200);
-  res.end('Bot is running!');
-});
-const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
-  console.log(`Simple keep-alive server running on port ${PORT}`);
-});
