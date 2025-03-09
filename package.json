@@ -1,0 +1,21 @@
+{
+  "name": "autobot",
+  "version": "1.0.0",
+  "description": "Discord bot for calling FullBuff backend automated workflows",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "engines": {
+    "node": "22.0"
+  },
+  "dependencies": {
+    "axios": "1.8.2",
+    "discord.js": "14.18.0",
+    "dotenv": "16.4.7"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.9"
+  }
+}
